@@ -8,10 +8,9 @@
 | 编号 | 作品 | 说明 | 在线访问 | 源码仓库 |
 | --- | --- | --- | --- | --- |
 | 1 | Register Form | 注册表单与输入校验 | [register-page-rho-one.vercel.app](https://register-page-rho-one.vercel.app/) | [Register-Page](https://github.com/yangon2333/Register-Page) |
-| 2 | Quiz Game | 课堂测验小游戏 | [register-page-ozu6.vercel.app](https://register-page-ozu6.vercel.app/) | [Quiz-Game](https://github.com/yangon2333/Quiz-Game) |
-| 3 | Menu Search | 菜单搜索器 | [quiz-game-6gyj.vercel.app](https://quiz-game-6gyj.vercel.app/) | [Menu-Search](https://github.com/yangon2333/Menu-Search) |
+| 2 | Quiz Game | 课堂测验小游戏 | [quiz-game-eight-iota.vercel.app](https://quiz-game-eight-iota.vercel.app/) | [Quiz-Game](https://github.com/yangon2333/Quiz-Game) |
+| 3 | Menu Search | 菜单搜索器 | [menu-search-five.vercel.app](https://menu-search-five.vercel.app/) | [Menu-Search](https://github.com/yangon2333/Menu-Search) |
 
-> 上表的在线地址取自各 GitHub 仓库设置里的 Website 字段。
 > 如果地址有变化，只需修改 `script.js` 顶部 `PROJECTS` 数组里对应的 `site` 一行，HTML 无需改动。
 
 点击作品卡片，即可在新标签页打开对应作品的在线页面；

@@ -5,7 +5,6 @@
 //   repo  = 作品的 GitHub 源码仓库（点击卡片右下角链接打开）
 //
 // 如果某个网址有变化，只改这里对应的一行即可，HTML 不需要动。
-// 目前三个 site 取值来自各仓库 GitHub 设置里的 Website 字段，建议自行点开核对一次。
 // ==========================================================================
 
 const PROJECTS = [
@@ -26,7 +25,7 @@ const PROJECTS = [
     tag: 'Quiz',
     image: './image/project-2-quiz.png',
     alt: 'Quiz Game 测验小游戏页面截图',
-    site: 'https://register-page-ozu6.vercel.app/',
+    site: 'https://quiz-game-eight-iota.vercel.app/',
     repo: 'https://github.com/yangon2333/Quiz-Game'
   },
   {
@@ -36,7 +35,7 @@ const PROJECTS = [
     tag: 'Search',
     image: './image/project-3-menu.png',
     alt: 'Menu Search 菜单搜索页面截图',
-    site: 'https://quiz-game-6gyj.vercel.app/',
+    site: 'https://menu-search-five.vercel.app/',
     repo: 'https://github.com/yangon2333/Menu-Search'
   }
 ];
