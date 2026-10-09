@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="yangon 的前端网页作品集，集中展示注册表单、测验小游戏与菜单搜索三个课堂作业。" />
+  <title>yangon 的前端网页作品集</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <nav class="nav">
+    <a class="logo" href="#top">yangon</a>
+    <a class="btn btn-primary nav-cta" href="#works">浏览作品</a>
+  </nav>
+
+  <header class="hero" id="top">
+    <span class="hero-dot" aria-hidden="true"></span>
+    <h1>把三次课堂练习<br>做成一个作品集</h1>
+    <p class="hero-lead">
+      包含注册表单、测验小游戏与菜单搜索三个前端作业，点击卡片即可打开对应的 GitHub 仓库查看源码
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#works">浏览作品</a>
+      <a class="btn btn-secondary" href="https://github.com/yangon2333" target="_blank"
+        rel="noopener noreferrer">我的 GitHub</a>
+    </div>
+    <p class="hero-note">纯 HTML、CSS 与 JavaScript 实现，无框架、无需登录</p>
+  </header>
+
+  <main>
+    <section class="section" id="works">
+      <h2>Selected works</h2>
+      <div class="works">
+        <article class="card work" data-url="https://github.com/yangon2333/Register-Page" tabindex="0" role="link"
+          aria-label="打开 Register Form 的 GitHub 仓库">
+          <div class="work-preview">
+            <img src="./image/project-1-register.png" alt="Register Page 注册表单页面截图">
+          </div>
+          <h3><span class="step-num">1</span> Register Form</h3>
+          <p>注册表单页面，实现用户名、邮箱、手机号、密码与协议勾选的前端校验</p>
+          <div class="work-meta">
+            <span class="tag">Form</span>
+            <span class="repo-link">GitHub 仓库
+              <svg class="arrow" viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M4.5 11.5 11.5 4.5M6 4.5h5.5V10" fill="none" stroke="currentColor" stroke-width="1.6"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </div>
+        </article>
+
+        <article class="card work" data-url="https://github.com/yangon2333/Quiz-Game" tabindex="0" role="link"
+          aria-label="打开 Quiz Game 的 GitHub 仓库">
+          <div class="work-preview">
+            <img src="./image/project-2-quiz.png" alt="Quiz Game 测验小游戏页面截图">
+          </div>
+          <h3><span class="step-num">2</span> Quiz Game</h3>
+          <p>五道选择题的小游戏，点击选项即时判定对错并计分，结束后可重新开始</p>
+          <div class="work-meta">
+            <span class="tag">Quiz</span>
+            <span class="repo-link">GitHub 仓库
+              <svg class="arrow" viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M4.5 11.5 11.5 4.5M6 4.5h5.5V10" fill="none" stroke="currentColor" stroke-width="1.6"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </div>
+        </article>
+
+        <article class="card work" data-url="https://github.com/yangon2333/Menu-Search" tabindex="0" role="link"
+          aria-label="打开 Menu Search 的 GitHub 仓库">
+          <div class="work-preview">
+            <img src="./image/project-3-menu.png" alt="Menu Search 菜单搜索页面截图">
+          </div>
+          <h3><span class="step-num">3</span> Menu Search</h3>
+          <p>菜单搜索页面，支持关键字实时筛选与分类切换，并处理空结果提示</p>
+          <div class="work-meta">
+            <span class="tag">Search</span>
+            <span class="repo-link">GitHub 仓库
+              <svg class="arrow" viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M4.5 11.5 11.5 4.5M6 4.5h5.5V10" fill="none" stroke="currentColor" stroke-width="1.6"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>yangon 的前端网页作品集 · 点击卡片即可打开对应 GitHub 仓库</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
