@@ -38,5 +38,8 @@
 
 ## 部署
 
-代码托管于 GitHub，使用 Vercel 部署。
+代码托管于 [GitHub 仓库](https://github.com/yangon2333/Portfolio)，
+使用 Vercel 部署：在 Vercel 选择 **Import Git Repository** 并选中该仓库，
+把 **Root Directory** 设为 `portfolio` 后即可部署，之后每次 `git push` 都会自动重新部署。
+
 项目为静态网页，无需安装依赖或执行构建命令。
