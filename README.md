@@ -26,7 +26,7 @@
 | 代码推送到 GitHub | 已完成 | 三个仓库工作区干净，本地与 `origin/main` 一致 |
 | 三个作品部署上线 | 已完成 | 三个线上地址已用浏览器实测，页面标题与正文内容均正确 |
 | 自行截图三个作品 | 已完成 | `image/` 下为三个项目在本机渲染后截取的界面，规格统一为 2400×1500 |
-| 作品集页面本身部署 | 待完成 | 需要先在 Vercel 导入本仓库，见下方「部署」 |
+| 作品集页面本身部署 | 已完成 | [portfolio-eight-tan-51.vercel.app](https://portfolio-eight-tan-51.vercel.app/)，已实测首页文案、三张卡片链接与截图均正常 |
 
 ## 页面特点
 
@@ -46,6 +46,10 @@
 ## 本地运行
 
 使用 Visual Studio Code 打开本文件夹，用 Live Server 打开 `index.html` 即可。
+
+## 在线访问
+
+作品集：https://portfolio-eight-tan-51.vercel.app/
 
 ## 部署
 
