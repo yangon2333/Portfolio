@@ -310,6 +310,62 @@ img {
 }
 
 /* --------------------------------------------------------------------------
+   三个作品的文字介绍
+   -------------------------------------------------------------------------- */
+
+.about {
+  padding-top: 0;
+}
+
+.about-item {
+  border-top: 1px solid var(--border);
+  padding-top: 26px;
+  margin-bottom: 34px;
+}
+
+.about-item:last-child {
+  margin-bottom: 0;
+}
+
+.about-item h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.4;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.about-item p {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.65;
+  margin-bottom: 8px;
+}
+
+.about-item p:last-child {
+  margin-bottom: 0;
+}
+
+.about-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 12px;
+}
+
+.about-links a {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--pink);
+  transition: color var(--transition);
+}
+
+.about-links a:hover {
+  color: var(--pink-hover);
+}
+
+/* --------------------------------------------------------------------------
    页脚
    -------------------------------------------------------------------------- */
 
@@ -336,6 +392,10 @@ img {
 
   .section {
     padding: 8px 16px 64px;
+  }
+
+  .about {
+    padding-top: 0;
   }
 
   .works {
