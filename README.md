@@ -1,45 +1,42 @@
-# 第三次课堂作业：前端网页作品集
+# 前端作业作品集
 
-使用 HTML、CSS 和 JavaScript 制作个人作品展示页面，
-集中展示前三次前端作业的截图、简介和访问链接。
+把我这学期前三次前端作业放在一个页面里展示，
+每个作品配一张截图和一段说明，点击卡片就能打开对应的网页。
 
-## 在线访问
+## 三个作品
 
-作品集：https://portfolio-eight-tan-51.vercel.app/
+| 作品 | 内容 | 在线地址 | 源码 |
+| --- | --- | --- | --- |
+| Register Form | 注册表单，带输入校验 | [register-page-rho-one.vercel.app](https://register-page-rho-one.vercel.app/) | [Register-Page](https://github.com/yangon2333/Register-Page) |
+| Quiz Game | 选择题小游戏，答完显示总分 | [quiz-game-eight-iota.vercel.app](https://quiz-game-eight-iota.vercel.app/) | [Quiz-Game](https://github.com/yangon2333/Quiz-Game) |
+| Menu Search | 菜单搜索，支持分类筛选 | [menu-search-five.vercel.app](https://menu-search-five.vercel.app/) | [Menu-Search](https://github.com/yangon2333/Menu-Search) |
 
-GitHub：https://github.com/yangon2333/Portfolio
+作品集本身也部署好了：https://portfolio-eight-tan-51.vercel.app/
 
-## 展示作品
+## 页面怎么做的
 
-- Register Form：注册表单与输入校验。
-- Quiz Game：课堂测验小游戏。
-- Menu Search：菜单搜索器。
+三个作品的数据都写在 `script.js` 开头的 `PROJECTS` 里，
+卡片是页面加载后用 JavaScript 生成出来的，所以想加一个作品只要往数组里再写一条。
 
-点击作品卡片，即可在新标签页打开对应网站；
-卡片中的「GitHub 仓库」链接可进入该作品的源码仓库。
+点击卡片的跳转也是 JavaScript 做的，另外按 Tab 选中卡片后回车或空格也能打开。
+卡片右下角的「GitHub 仓库」链接会单独打开仓库，不会同时触发卡片跳转。
 
-## 页面特点
+样式方面，屏幕宽度小于 720px 时卡片从两列变成一列，手机上也能正常看。
+截图是用浏览器把三个作业分别打开后截的，统一成一样的尺寸，放在 `image/` 里。
 
-- 使用作品截图展示各项目的实际界面。
-- 使用响应式布局，适配不同屏幕宽度，宽度小于 720px 时卡片由两列变为一列。
-- 使用 JavaScript 实现卡片点击跳转，并支持 Tab 聚焦后用回车或空格打开；
-  卡片内的仓库链接不会触发卡片跳转。
+## 文件
 
-## 文件说明
+- `index.html`：页面结构
+- `style.css`：样式和响应式
+- `script.js`：作品数据和卡片生成、点击跳转
+- `image/`：三个作品的截图
+- `design.md`：配色和字体的规范，页面是按这个做的
 
-- `index.html`：页面结构与作品内容。
-- `style.css`：页面样式与响应式布局。
-- `script.js`：作品数据（`PROJECTS` 数组）与作品卡片的点击跳转逻辑。
-- `image/`：作品截图及图片资源。
-- `design.md`：页面设计规范，配色、字体、间距与组件规则均按该规范实现。
+## 本地打开
 
-## 本地运行
-
-在 VS Code 或 Cursor 中打开项目文件夹，
-使用 Live Server 打开 `index.html`。
+用 VS Code 打开这个文件夹，装个 Live Server 插件，右键 `index.html` 选 Open with Live Server 就行。
 
 ## 部署
 
-代码托管于 GitHub，使用 Vercel 部署。
-在 Vercel 导入本仓库时，需要把 **Root Directory** 设为 `portfolio`。
-项目为静态网页，无需安装依赖或执行构建命令。
+代码在 GitHub 上，用 Vercel 部署，静态页面不需要构建。
+重新导入的时候记得把 Root Directory 填成 `portfolio`，因为 `index.html` 在这个子目录里。
