@@ -67,5 +67,3 @@ Chocolate Cake $5.99、Orange Juice $3.49。
 ## 部署
 
 仓库在 GitHub，连接 Vercel，push 后自动发布，静态页面不用构建。
-
-作品集地址：https://portfolio-eight-tan-51.vercel.app/
