@@ -122,12 +122,7 @@ img {
 
 .hero {
   text-align: center;
-  padding: 84px 24px 0;
-}
-
-.hero-inner {
-  max-width: 820px;
-  margin: 0 auto;
+  padding: 84px 24px 96px;
 }
 
 .hero-dot {
@@ -153,9 +148,9 @@ img {
   font-size: 1.05rem;
   font-weight: 400;
   color: var(--text-muted);
-  max-width: 560px;
+  max-width: 620px;
   margin: 0 auto 30px;
-  line-height: 1.65;
+  line-height: 1.7;
 }
 
 .hero-actions {
@@ -163,7 +158,6 @@ img {
   justify-content: center;
   flex-wrap: wrap;
   gap: 12px;
-  margin-bottom: 64px;
 }
 
 .hero-note {
@@ -314,60 +308,14 @@ img {
 }
 
 /* --------------------------------------------------------------------------
-   三个作品的文字介绍（紧跟首屏）
+   卡片里的文字说明
    -------------------------------------------------------------------------- */
 
-.hero-brief {
-  padding-bottom: 76px;
-}
-
-.about-item {
-  max-width: 820px;
-  margin: 0 auto 34px;
-  border-top: 1px solid var(--border);
-  padding-top: 26px;
-}
-
-.about-item:last-child {
-  margin-bottom: 0;
-}
-
-.about-item h3 {
-  font-size: 1.05rem;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  line-height: 1.4;
-  color: var(--text);
-  margin-bottom: 10px;
-}
-
-.about-item p {
+.card-detail {
   color: var(--text-muted);
   font-size: 0.92rem;
   line-height: 1.65;
-  margin-bottom: 8px;
-}
-
-.about-item p:last-child {
-  margin-bottom: 0;
-}
-
-.about-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 18px;
-  margin-top: 12px;
-}
-
-.about-links a {
-  font-size: 0.82rem;
-  font-weight: 600;
-  color: var(--pink);
-  transition: color var(--transition);
-}
-
-.about-links a:hover {
-  color: var(--pink-hover);
+  margin-top: 8px;
 }
 
 /* --------------------------------------------------------------------------
@@ -392,11 +340,7 @@ img {
   }
 
   .hero {
-    padding: 64px 20px 0;
-  }
-
-  .hero-brief {
-    padding-bottom: 60px;
+    padding: 64px 20px 72px;
   }
 
   .section {
