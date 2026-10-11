@@ -45,30 +45,28 @@ Chocolate Cake $5.99、Orange Juice $3.49。
 
 ## 作品集页面
 
-深绿近黑的底配一点珊瑚粉。三个作业的截图都是白底界面，压暗底色让它们自己浮出来，
-就不用靠边框和阴影去强调。
+三个作品的信息写在 `script.js` 里，打开页面后由 JavaScript 生成卡片，
+点卡片跳转到对应的在线页面，右下角的链接进各自的仓库。
 
-除了导航和一句说明，页面没有别的装饰，位置都留给作品。
-卡片悬停只上浮一点、底色亮一档，不放大也不加投影。留白给得足，看的时候不用赶。
-
-三个作品按作业顺序排，编号用粉色圆点标出。截图统一尺寸，宽屏两列、窄屏一列。
+底色为深绿近黑，强调部分用珊瑚粉。除导航和一句说明外没有其他装饰，
+位置都留给作品。卡片悬停时轻微上浮、底色亮一档，不加放大和投影。
+三个作品按作业顺序排，编号用粉色圆点标出，截图统一尺寸，宽屏两列、窄屏一列。
 
 ## 文件
 
 - `index.html`：页面结构
-- `style.css`：页面样式，含窄屏调整
+- `style.css`：页面样式，窄屏调整
 - `script.js`：作品数据与卡片生成、跳转
 - `image/`：三个作业的截图
 - `design.md`：配色、字号规范
 
 ## 本地看
 
-双击 `index.html` 就能打开；装了 Live Server 的话，右键选 Open with Live Server，
-存盘会自己刷新。
+双击 `index.html` 即可打开，或装了 Live Server 后右键选 Open with Live Server。
 
 ## 部署
 
-仓库在 GitHub，Vercel 连的就是它，push 之后线上自动重新发布，静态页面不用构建。
-`index.html` 在 `portfolio` 子目录里，所以 Vercel 的 Root Directory 设的是 `portfolio`。
+仓库在 GitHub，Vercel 连着它，push 后自动发布，静态页面不用构建。
+`index.html` 在 `portfolio` 子目录里，所以 Root Directory 设为 `portfolio`。
 
 作品集地址：https://portfolio-eight-tan-51.vercel.app/
