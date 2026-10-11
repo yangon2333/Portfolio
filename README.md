@@ -1,7 +1,9 @@
 # 前端作业作品集
 
-前三次前端作业的展示页面，每个作品配一张截图和一段说明，
-点卡片就能打开对应的网页。三个作业各自有单独的仓库。
+三次前端作业放在同一个页面里，各配一张截图和一段说明，点卡片就能打开对应的网页。
+三个作业分别有自己的仓库。
+
+在线作品集：https://portfolio-eight-tan-51.vercel.app/
 
 ## 菜单搜索（Menu Search）
 
@@ -54,20 +56,20 @@ Chocolate Cake $5.99、Orange Juice $3.49。
 
 ## 文件
 
-- `index.html`：页面骨架
-- `style.css`：样式，含窄屏的处理
-- `script.js`：作品数据，以及生成卡片和点击跳转
+- `index.html`：页面结构
+- `style.css`：页面样式，窄屏下的调整也在里面
+- `script.js`：作品数据，以及卡片的生成与跳转
 - `image/`：三个作业的截图
-- `design.md`：配色和字号的规范，页面是按它做的
+- `design.md`：配色、字号等规范，页面按它来写
 
 ## 本地看
 
-用 VS Code 打开这个文件夹，装个 Live Server 插件，
-右键 `index.html` 选 Open with Live Server；或者直接双击 `index.html` 用浏览器打开也行。
+用 VS Code 打开这个文件夹，装一个 Live Server 插件，右键 `index.html` 选 Open with Live Server；
+也可以直接双击 `index.html`，用浏览器打开。
 
 ## 部署
 
-代码在 GitHub，用 Vercel 部署，静态页面不需要构建。
-导入的时候 Root Directory 要填 `portfolio`，因为 `index.html` 在这个子目录里。
+代码托管在 GitHub，通过 Vercel 发布，静态页面不需要构建。
+导入时 Root Directory 填 `portfolio`，`index.html` 在这个子目录里。
 
-作品集：https://portfolio-eight-tan-51.vercel.app/
+作品集地址：https://portfolio-eight-tan-51.vercel.app/
