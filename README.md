@@ -64,12 +64,13 @@ Chocolate Cake $5.99、Orange Juice $3.49。
 
 ## 本地看
 
-用 VS Code 打开这个文件夹，装一个 Live Server 插件，右键 `index.html` 选 Open with Live Server；
-也可以直接双击 `index.html`，用浏览器打开。
+`index.html` 直接双击就能在浏览器里打开。VS Code 装了 Live Server 插件的话，
+右键选 Open with Live Server 也可以，改完存盘页面会自己刷新，调试的时候方便些。
 
 ## 部署
 
-代码托管在 GitHub，通过 Vercel 发布，静态页面不需要构建。
-导入时 Root Directory 填 `portfolio`，`index.html` 在这个子目录里。
+仓库推在 GitHub 上，Vercel 连的是这个仓库，所以更新只要 push，线上会自己重新发布。
+静态页面没有构建这一步。因为 `index.html` 在 `portfolio` 子目录里，
+Vercel 项目的 Root Directory 设的是 `portfolio`。
 
 作品集地址：https://portfolio-eight-tan-51.vercel.app/
