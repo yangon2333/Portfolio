@@ -187,37 +187,66 @@ img {
 
 .works {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  grid-template-columns: 1fr;
+  gap: 20px;
 }
 
 /* --------------------------------------------------------------------------
-   卡片
+   一个作品：左边截图方框，右边文字
    -------------------------------------------------------------------------- */
 
-.card {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-card);
-  padding: 28px 26px 30px;
-  box-shadow: var(--shadow);
+.work {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  cursor: pointer;
 }
 
-.card h3 {
+.work-preview {
+  flex: 0 0 58%;
+  aspect-ratio: 16 / 10;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  background: var(--card);
+  border: 1px solid var(--border);
+  transition: background var(--transition), transform var(--transition);
+}
+
+.work:hover .work-preview,
+.work:focus-visible .work-preview {
+  background: var(--card-hover);
+  transform: translateY(-2px);
+}
+
+.work:focus-visible {
+  outline: 2px solid var(--pink);
+  outline-offset: 6px;
+  border-radius: var(--radius-card);
+}
+
+.work-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.work-text {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.work-text h3 {
   font-size: 1.05rem;
   font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 1.4;
+  color: var(--text);
   display: flex;
   align-items: center;
   gap: 8px;
   margin-bottom: 8px;
-}
-
-.card p {
-  color: var(--text-muted);
-  font-size: 0.92rem;
-  line-height: 1.55;
 }
 
 .step-num {
@@ -234,38 +263,11 @@ img {
   flex-shrink: 0;
 }
 
-.work {
-  cursor: pointer;
-  transition: background var(--transition), transform var(--transition);
-}
-
-.work:hover,
-.work:focus-visible {
-  background: var(--card-hover);
-  transform: translateY(-2px);
-}
-
-.work:focus-visible {
-  outline: 2px solid var(--pink);
-  outline-offset: 3px;
-}
-
-.work-preview {
-  aspect-ratio: 16 / 10;
-  border-radius: 16px;
-  overflow: hidden;
-  margin-bottom: 22px;
-  background: #0e1814;
-  padding: 10px;
-}
-
-.work-preview img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
-  display: block;
-  border-radius: 12px;
+.card-detail {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.65;
+  margin-top: 8px;
 }
 
 .work-meta {
@@ -273,7 +275,7 @@ img {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  margin-top: 14px;
+  margin-top: 16px;
 }
 
 .tag {
@@ -308,17 +310,6 @@ img {
 }
 
 /* --------------------------------------------------------------------------
-   卡片里的文字说明
-   -------------------------------------------------------------------------- */
-
-.card-detail {
-  color: var(--text-muted);
-  font-size: 0.92rem;
-  line-height: 1.65;
-  margin-top: 8px;
-}
-
-/* --------------------------------------------------------------------------
    页脚
    -------------------------------------------------------------------------- */
 
@@ -347,11 +338,13 @@ img {
     padding: 8px 16px 64px;
   }
 
-  .works {
-    grid-template-columns: 1fr;
+  .work {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 18px;
   }
 
-  .card {
-    padding: 22px 20px 24px;
+  .work-preview {
+    flex: none;
   }
 }

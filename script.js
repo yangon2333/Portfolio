@@ -46,10 +46,10 @@ const ARROW_SVG =
   '<path d="M4.5 11.5 11.5 4.5M6 4.5h5.5V10" fill="none" stroke="currentColor" ' +
   'stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" /></svg>';
 
-// 按上面的数据生成卡片：截图 + 标题 + 说明 + 仓库链接
+// 生成一个作品：左边截图方框，右边文字说明
 function createCard(project) {
   const card = document.createElement('article');
-  card.className = 'card work';
+  card.className = 'work';
   card.tabIndex = 0;
   card.setAttribute('role', 'link');
   card.setAttribute('aria-label', '打开 ' + project.title + ' 的在线页面');
@@ -64,21 +64,22 @@ function createCard(project) {
   img.loading = 'lazy';
   preview.appendChild(img);
 
+  const text = document.createElement('div');
+  text.className = 'work-text';
+
   const heading = document.createElement('h3');
   const num = document.createElement('span');
   num.className = 'step-num';
   num.textContent = project.num;
   heading.appendChild(num);
   heading.appendChild(document.createTextNode(' ' + project.title));
+  text.appendChild(heading);
 
-  card.appendChild(preview);
-  card.appendChild(heading);
-
-  project.detail.forEach(text => {
+  project.detail.forEach(line => {
     const p = document.createElement('p');
     p.className = 'card-detail';
-    p.textContent = text;
-    card.appendChild(p);
+    p.textContent = line;
+    text.appendChild(p);
   });
 
   const meta = document.createElement('div');
@@ -98,7 +99,10 @@ function createCard(project) {
 
   meta.appendChild(tag);
   meta.appendChild(repoLink);
-  card.appendChild(meta);
+  text.appendChild(meta);
+
+  card.appendChild(preview);
+  card.appendChild(text);
 
   return card;
 }
