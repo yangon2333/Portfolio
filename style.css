@@ -122,7 +122,10 @@ img {
 
 .hero {
   text-align: center;
-  padding: 84px 24px 96px;
+  padding: 84px 24px 0;
+}
+
+.hero-inner {
   max-width: 820px;
   margin: 0 auto;
 }
@@ -160,6 +163,7 @@ img {
   justify-content: center;
   flex-wrap: wrap;
   gap: 12px;
+  margin-bottom: 64px;
 }
 
 .hero-note {
@@ -310,17 +314,18 @@ img {
 }
 
 /* --------------------------------------------------------------------------
-   三个作品的文字介绍
+   三个作品的文字介绍（紧跟首屏）
    -------------------------------------------------------------------------- */
 
-.about {
-  padding-top: 0;
+.hero-brief {
+  padding-bottom: 76px;
 }
 
 .about-item {
+  max-width: 820px;
+  margin: 0 auto 34px;
   border-top: 1px solid var(--border);
   padding-top: 26px;
-  margin-bottom: 34px;
 }
 
 .about-item:last-child {
@@ -387,15 +392,15 @@ img {
   }
 
   .hero {
-    padding: 64px 20px 72px;
+    padding: 64px 20px 0;
+  }
+
+  .hero-brief {
+    padding-bottom: 60px;
   }
 
   .section {
     padding: 8px 16px 64px;
-  }
-
-  .about {
-    padding-top: 0;
   }
 
   .works {
